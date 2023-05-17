@@ -1,0 +1,4 @@
+#!/bin/bash
+BASEDIR=$(dirname "$0")
+PSSHIM="$BASEDIR/dev.ps1"
+pwsh -NoProfile -Command $PSSHIM "$@"
